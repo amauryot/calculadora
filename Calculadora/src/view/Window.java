@@ -1,10 +1,16 @@
 package view;
 
-import javax.swing.JFrame;
+import view.frame.Frame;
+import view.panel.PanelMain;
+import view.subpanel.display.SubPanelDisplay;
+import view.subpanel.keyboard.SubPanelKeyboard;
 
 public class Window {
 
-	private JFrame frame;
+	private Frame frame;
+	private PanelMain panelMain;
+	private SubPanelDisplay subPanelDisplay;
+	private SubPanelKeyboard subPanelKeyboard;
 
 	public Window() {
 		initialize();
@@ -14,9 +20,16 @@ public class Window {
 		frame.setVisible(true);
 	}
 	
-	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	private void initialize() {		
+		frame = new Frame();
+		
+		panelMain = new PanelMain();
+		frame.getContentPane().add(panelMain);
+		
+		subPanelDisplay = new SubPanelDisplay();
+		panelMain.add(subPanelDisplay);
+		
+		subPanelKeyboard = new SubPanelKeyboard();
+		panelMain.add(subPanelKeyboard);
 	}
 }
