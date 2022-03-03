@@ -23,15 +23,15 @@ public class SubPanelKeyboard extends JPanel {
 	private JPanel subPanel1;
 	private JPanel subPanel2;
 	private JPanel subPanel3;
-	private ArrayList<JButton> buttonList;
+	private ArrayList<JButton> keyList;
 	
 	public SubPanelKeyboard() {
 		super();
 		initialize();
 	}
 	
-	public ArrayList<JButton> buttonList() {
-		return buttonList;
+	public ArrayList<JButton> keyList() {
+		return keyList;
 	}
 	
 	private JPanel panel(int index) {
@@ -68,7 +68,7 @@ public class SubPanelKeyboard extends JPanel {
 		
 		/* BUTTONS */
 		
-		buttonList = new ArrayList<JButton>();
+		keyList = new ArrayList<JButton>();
 		
 		for (Key key : Key.values()) {
 			JButton button = new JButton(key.title());
@@ -76,6 +76,7 @@ public class SubPanelKeyboard extends JPanel {
 			button.setFont(buttonFont);
 			button.setFocusable(false);
 			panel(key.index()).add(button);
+			keyList.add(button);
 		}
 	}
 }

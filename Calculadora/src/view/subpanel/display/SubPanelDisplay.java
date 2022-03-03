@@ -39,9 +39,9 @@ public class SubPanelDisplay extends JPanel {
 		
 		/* TEXT FIELD */
 		
-		JTextField textField = new JTextField();
-		textField.setFont(textFieldFont);
-		textField.setHorizontalAlignment(JTextField.RIGHT);
-		this.add(textField);
+		display = new JTextField();
+		display.setFont(textFieldFont);
+		display.setHorizontalAlignment(JTextField.RIGHT);
+		this.add(display);
 	}
 }
