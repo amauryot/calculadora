@@ -2,6 +2,7 @@ package view.frame;
 
 import java.util.ArrayList;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -11,6 +12,7 @@ public class Frame extends JFrame {
 
 	private static final long serialVersionUID = 8296914021670968846L;
 
+	private final String ICON_FILE = "icon.png";
 	private final String MENU_TITLE = "Menu";
 	private final String FRAME_TITLE = "Calculadora";
 	private final int FRAME_WIDTH = 284;
@@ -37,6 +39,11 @@ public class Frame extends JFrame {
 		this.setSize(FRAME_WIDTH, FRAME_HEIGHT);
 		this.setResizable(false);
 		this.setLocationRelativeTo(null);
+		
+		/* ICON */
+		
+		ImageIcon icon = new ImageIcon(ClassLoader.getSystemResource(ICON_FILE));
+		this.setIconImage(icon.getImage());
 		
 		/* MENU */
 		
