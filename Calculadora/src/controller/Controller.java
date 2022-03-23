@@ -40,6 +40,13 @@ public class Controller implements ActionListener {
 		return calculator.add();
 	}
 	
+	private String number(String number) {
+		if (window.getDisplayValue().equals("0")) {
+			window.clearDisplay();
+		}
+		return number;
+	}
+	
 	@Override
 	public void actionPerformed(ActionEvent event) {
 
@@ -130,70 +137,70 @@ public class Controller implements ActionListener {
 		/* KEY (0) */
 		
 		if (event.getSource() == window.getKey(Key.ZERO)) {
-			window.setDisplay("0");
+			window.setDisplay(number("0"));
 			return;
 		}
 		
 		/* KEY (1) */
 		
 		if (event.getSource() == window.getKey(Key.ONE)) {
-			window.setDisplay("1");
+			window.setDisplay(number("1"));
 			return;
 		}
 		
 		/* KEY (2) */
 		
 		if (event.getSource() == window.getKey(Key.TWO)) {
-			window.setDisplay("2");
+			window.setDisplay(number("2"));
 			return;
 		}
 		
 		/* KEY (3) */
 		
 		if (event.getSource() == window.getKey(Key.THREE)) {
-			window.setDisplay("3");
+			window.setDisplay(number("3"));
 			return;
 		}
 		
 		/* KEY (4) */
 		
 		if (event.getSource() == window.getKey(Key.FOUR)) {
-			window.setDisplay("4");
+			window.setDisplay(number("4"));
 			return;
 		}
 		
 		/* KEY (5) */
 		
 		if (event.getSource() == window.getKey(Key.FIVE)) {
-			window.setDisplay("5");
+			window.setDisplay(number("5"));
 			return;
 		}
 		
 		/* KEY (6) */
 		
 		if (event.getSource() == window.getKey(Key.SIX)) {
-			window.setDisplay("6");
+			window.setDisplay(number("6"));
 			return;
 		}
 		
 		/* KEY (7) */
 		
 		if (event.getSource() == window.getKey(Key.SEVEN)) {
-			window.setDisplay("7");
+			window.setDisplay(number("7"));
 			return;
 		}
 		
 		/* KEY (8) */
 		
 		if (event.getSource() == window.getKey(Key.EIGHT)) {
-			window.setDisplay("8");
+			window.setDisplay(number("8"));
 			return;
 		}
 		
 		/* KEY (9) */
 		
 		if (event.getSource() == window.getKey(Key.NINE)) {
-			window.setDisplay("9");
+			window.setDisplay(number("9"));
 			return;
 		}
 	}
