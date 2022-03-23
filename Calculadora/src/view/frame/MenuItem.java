@@ -3,7 +3,7 @@ package view.frame;
 public enum MenuItem {
 
 	ABOUT(0, "Sobre"),
-	EXIT(1, "Sair");
+	EXIT (1, "Sair" );
 	
 	private int index;
 	private String title;

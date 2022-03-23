@@ -8,7 +8,7 @@ public class OptionPane {
 	private final String MESSAGE_ABOUT = 
 		"Calculadora"
 		+ "\nCopyright © Mar 2022"
-		+ "\n\nVersão: 0.4.0"
+		+ "\n\nVersão: 0.4.1"
 		+ "\n\nAmaury Tavares"
 		+ "\namauryot@gmail.com\n\n";
 	

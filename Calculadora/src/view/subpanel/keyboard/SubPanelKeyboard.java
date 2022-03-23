@@ -12,17 +12,45 @@ public class SubPanelKeyboard extends JPanel {
 
 	private static final long serialVersionUID = 7179741503899190282L;
 
-	private final int SUBPANEL_X = 10,    SUBPANEL_Y = 70,    SUBPANEL_WIDTH = 230,   SUBPANEL_HEIGHT = 290;
-	private final int SUBPANEL_1_X = 0,   SUBPANEL_1_Y = 0,   SUBPANEL_1_WIDTH = 230, SUBPANEL_1_HEIGHT = 230;
-	private final int SUBPANEL_2_X = 0,   SUBPANEL_2_Y = 240, SUBPANEL_2_WIDTH = 110, SUBPANEL_2_HEIGHT = 50;
-	private final int SUBPANEL_3_X = 120, SUBPANEL_3_Y = 240, SUBPANEL_3_WIDTH = 110, SUBPANEL_3_HEIGHT = 50;
-	private final int GRID_1_ROWS = 4, GRID_1_COLS = 4, GRID_1_HGAP = 10, GRID_1_VGAP = 10;
-	private final int GRID_2_ROWS = 1, GRID_2_COLS = 1, GRID_2_HGAP = 0,  GRID_2_VGAP = 0;
-	private final int GRID_3_ROWS = 1, GRID_3_COLS = 2, GRID_3_HGAP = 10, GRID_3_VGAP = 0;
+	private final int SUBPANEL_X      = 10;
+	private final int SUBPANEL_Y      = 70;
+	private final int SUBPANEL_WIDTH  = 230;
+	private final int SUBPANEL_HEIGHT = 290;
+	
+	private final int SUBPANEL_1_X      = 0;
+	private final int SUBPANEL_1_Y      = 0;
+	private final int SUBPANEL_1_WIDTH  = 230;
+	private final int SUBPANEL_1_HEIGHT = 230;
+	
+	private final int SUBPANEL_2_X      = 0;
+	private final int SUBPANEL_2_Y      = 240;
+	private final int SUBPANEL_2_WIDTH  = 110;
+	private final int SUBPANEL_2_HEIGHT = 50;
+	
+	private final int SUBPANEL_3_X      = 120;
+	private final int SUBPANEL_3_Y      = 240;
+	private final int SUBPANEL_3_WIDTH  = 110;
+	private final int SUBPANEL_3_HEIGHT = 50;
+	
+	private final int GRID_1_ROWS = 4;
+	private final int GRID_1_COLS = 4;
+	private final int GRID_1_HGAP = 10;
+	private final int GRID_1_VGAP = 10;
+	
+	private final int GRID_2_ROWS = 1;
+	private final int GRID_2_COLS = 1;
+	private final int GRID_2_HGAP = 0;
+	private final int GRID_2_VGAP = 0;
+	
+	private final int GRID_3_ROWS = 1;
+	private final int GRID_3_COLS = 2;
+	private final int GRID_3_HGAP = 10;
+	private final int GRID_3_VGAP = 0;
 	
 	private JPanel subPanel1;
 	private JPanel subPanel2;
 	private JPanel subPanel3;
+	
 	private ArrayList<JButton> keyList;
 	
 	public SubPanelKeyboard() {

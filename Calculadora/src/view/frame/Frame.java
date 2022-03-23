@@ -12,11 +12,12 @@ public class Frame extends JFrame {
 
 	private static final long serialVersionUID = 8296914021670968846L;
 
-	private final String ICON_FILE = "icon.png";
-	private final String MENU_TITLE = "Menu";
-	private final String FRAME_TITLE = "Calculadora";
-	private final int FRAME_WIDTH = 284;
+	private final int FRAME_WIDTH  = 284;
 	private final int FRAME_HEIGHT = 450;
+	
+	private final String ICON_FILE   = "icon.png";
+	private final String MENU_TITLE  = "Menu";
+	private final String FRAME_TITLE = "Calculadora";
 	
 	public ArrayList<JMenuItem> menuItemList;
 	
